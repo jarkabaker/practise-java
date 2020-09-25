@@ -1,4 +1,4 @@
-package com.tardis;
+package com.tardis.dateTimePractise;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -104,7 +104,8 @@ public class DateTime {
 		System.out.println();
 		
 		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-		System.out.println(LocalDate.from(dateFormatter.parse(dateString)));
+		LocalDate localDate = LocalDate.from(dateFormatter.parse(dateString));
+		System.out.println(localDate);
 		
 	}
 	
@@ -116,6 +117,7 @@ private void getTodayDayOfWeek(LocalDate localDate) {
 	System.out.println();
 
 	System.out.println(localDate.getDayOfWeek());
+	System.out.println();
 		
 	}
 	
