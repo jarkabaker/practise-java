@@ -8,9 +8,9 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
 // Java 8 - New Date-Time API
-public class DateTime {
+public class RunnderDateTime {
 	
-	public DateTime() {
+	public RunnderDateTime() {
 		
 	}
 	

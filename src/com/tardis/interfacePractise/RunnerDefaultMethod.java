@@ -1,8 +1,8 @@
 package com.tardis.interfacePractise;
 
-public class InterfacePractiseClass {
+public class RunnerDefaultMethod {
 	
-	public InterfacePractiseClass() {
+	public RunnerDefaultMethod() {
 		
 	}
 	
