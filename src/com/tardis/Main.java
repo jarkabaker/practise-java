@@ -2,6 +2,7 @@ package com.tardis;
 
 import com.tardis.dateTimePractise.RunnderDateTime;
 import com.tardis.interfacePractise.RunnerDefaultMethod;
+import com.tardis.lambdaExpression.RunnerLambda;
 import com.tardis.mehodReference.RunnerMethodReference;
 import com.tardis.optionalClass.RunnerOptionalClass;
 
@@ -24,6 +25,10 @@ public class Main {
 		// JAVA 8 - Optional Class
 		RunnerOptionalClass runnerOptionalClass = new RunnerOptionalClass();
 		runnerOptionalClass.testOptionalClass();
+		
+		// JAVA 8 - Lambda
+		RunnerLambda runnerLambda = new RunnerLambda();
+		runnerLambda.testLambda();
   }
 
 }
