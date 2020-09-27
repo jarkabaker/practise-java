@@ -1,10 +1,13 @@
 package com.tardis;
 
 import com.tardis.dateTimePractise.RunnderDateTime;
+import com.tardis.forEach.RunnerForEach;
 import com.tardis.interfacePractise.RunnerDefaultMethod;
 import com.tardis.lambdaExpression.RunnerLambda;
+import com.tardis.lambdaFilterAndMap.RunnerLambdaFilterAndMap;
 import com.tardis.mehodReference.RunnerMethodReference;
 import com.tardis.optionalClass.RunnerOptionalClass;
+import com.tardis.stream.RunnerOfStream;
 
 public class Main {
 	
@@ -29,6 +32,18 @@ public class Main {
 		// JAVA 8 - Lambda
 		RunnerLambda runnerLambda = new RunnerLambda();
 		runnerLambda.testLambda();
+		
+		// JAVA 8 - Stream
+		RunnerOfStream runnerOfStream = new RunnerOfStream();
+		runnerOfStream.testStream();
+		
+		// JAVA 8 - ForEach
+		RunnerForEach runnerForEach = new RunnerForEach();
+		runnerForEach.testIterations();
+		
+		// JAVA 8 - Lambda Filter and Map
+		RunnerLambdaFilterAndMap runnerLambdaFilterAndMap = new RunnerLambdaFilterAndMap();
+		runnerLambdaFilterAndMap.testLambdaMore();
   }
 
 }

@@ -17,7 +17,7 @@ public class RunnerLambda {
 	
 	}
 	
-	public void testLambda1() {
+	private void testLambda1() {
 		List<String> pointList = new ArrayList<String>();
 		 
 		pointList.add("1");
@@ -25,13 +25,17 @@ public class RunnerLambda {
 		
 		System.out.println();
 		System.out.println("Print original list");
-		pointList.forEach(p ->  { 
-			System.out.println(p); 
+		/*
+		pointList.forEach(p -> { 
+			System.out.println(); 
 		});
+		*/
+		// The above can be written using method reference:
+		pointList.forEach(System.out::println);
 	}
 	
 	
-	public void testLambda2() {
+	private void testLambda2() {
 		
 		System.out.println();
 		
