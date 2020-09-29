@@ -1,6 +1,7 @@
 package com.tardis.lambdaFilterAndMap;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,9 +24,11 @@ public class RunnerLambdaFilterAndMap {
 		System.out.println("=============================");
 		this.test1();
 		this.test2();
+		this.test3();
 		
 	}
 	
+	// Filter
 	private void test1() {
 		
     List<Product> productsList = new ArrayList<Product>();  
@@ -51,6 +54,7 @@ public class RunnerLambdaFilterAndMap {
     
 	}
 	
+	// Filter and return list of filtered prices
 	private void test2() {
 		
 		List<Product> productsList = new ArrayList<Product>();  
@@ -69,6 +73,24 @@ public class RunnerLambdaFilterAndMap {
                 .collect(Collectors.toList());  
     System.out.println(pricesList);  
     
+	}
+	
+	// Map to products to modified products
+	private void test3() {
+		
+		List<Product> products = Arrays.asList(new Product(1,"HP Laptop",25000f),
+																					 new Product(2,"Dell Laptop",30000f),
+																					 new Product(3,"Lenevo Laptop",28000f),
+																					 new Product(4,"Sony Laptop",28000f),
+																					 new Product(5,"Apple Laptop",90000f));
+																					 
+	  List<Product> newProducts = products.stream()
+	                                 .map(product -> new Product(product.id, product.name, product.price / 100))
+	                                 .collect(Collectors.toList());
+		
+	  System.out.println();
+    System.out.println("Products with reduced prices");
+	  newProducts.forEach(eachProduct -> System.out.println(eachProduct.name + " - " + eachProduct.price));
 	}
 
 }
