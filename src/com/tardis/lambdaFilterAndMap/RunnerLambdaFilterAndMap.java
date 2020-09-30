@@ -68,8 +68,8 @@ public class RunnerLambdaFilterAndMap {
     System.out.println();
     System.out.println("Filter price > 25000 and return list of prices");
     List<Float> pricesList =  productsList.stream()  
-                .filter(p ->p.price> 25000)   // filtering price  
-                .map(pm ->pm.price)          // fetching price  
+                .filter(p -> p.price> 25000)   // filtering price  
+                .map(pm -> pm.price)          // fetching price  
                 .collect(Collectors.toList());  
     System.out.println(pricesList);  
     

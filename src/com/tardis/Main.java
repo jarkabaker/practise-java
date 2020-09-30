@@ -1,5 +1,6 @@
 package com.tardis;
 
+import com.tardis.collections.RunnerCollections;
 import com.tardis.dateTimePractise.RunnderDateTime;
 import com.tardis.forEach.RunnerForEach;
 import com.tardis.interfacePractise.RunnerDefaultMethod;
@@ -12,7 +13,7 @@ import com.tardis.stream.RunnerOfStream;
 public class Main {
 	
 	public static void main(String[] args) {
-		
+	/*	
 		// JAVA 8 - Date Time
 		RunnderDateTime dateTime = new RunnderDateTime();
 		dateTime.testDateTime();
@@ -44,6 +45,10 @@ public class Main {
 		// JAVA 8 - Lambda Filter and Map
 		RunnerLambdaFilterAndMap runnerLambdaFilterAndMap = new RunnerLambdaFilterAndMap();
 		runnerLambdaFilterAndMap.testLambdaMore();
+		*/
+		// Java 8 - Collections
+		RunnerCollections runnerCollections = new RunnerCollections();
+		runnerCollections.testColletions();
   }
 
 }
