@@ -10,6 +10,7 @@ import com.tardis.lambdaFilterAndMap.RunnerLambdaFilterAndMap;
 import com.tardis.mehodReference.RunnerMethodReference;
 import com.tardis.optionalClass.RunnerOptionalClass;
 import com.tardis.stream.RunnerOfStream;
+import com.tardis.var.VarRunner;
 
 public class Main {
 	
@@ -50,11 +51,17 @@ public class Main {
 		// Java 8 - Collections
 		RunnerCollections runnerCollections = new RunnerCollections();
 		runnerCollections.testColletions();
-		*/
+		
 		
 		// Java 9 - Reactive Stream
 		ReactiveStreamRunner reactiveStreamRunner = new ReactiveStreamRunner();
 		reactiveStreamRunner.testReactiveStream();
+		*/
+		
+		// Java 10 - var = Local-Variable Type Inference
+		VarRunner varRunner = new VarRunner();
+		varRunner.testVar();
+		
   }
 
 }

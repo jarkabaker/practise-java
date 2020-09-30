@@ -5,6 +5,9 @@ import java.util.concurrent.SubmissionPublisher;
 
 public class ReactiveStreamRunner {
 	
+	// Resembles Angular RxJS (Reactive Extension of Java Script)
+	// - uses observant and observables, subscriptions, ...
+	
 	public void testReactiveStream() {
 	
 		System.out.println("Testing Reactive Stream");

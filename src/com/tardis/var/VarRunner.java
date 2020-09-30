@@ -1,13 +1,10 @@
-package com.tardis.collections;
+package com.tardis.var;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 
-public class RunnerCollections {
+public class VarRunner {
 	
 	class Product{  
     int id;  
@@ -28,41 +25,13 @@ public class RunnerCollections {
     }
 	}
 	
-	public void testColletions() {
-		
-		System.out.println("Test Collections");
-		System.out.println("================");
-		this.testArrayIntegersSort();
-		this.testArrayListObjectsSort();
-		
-		System.out.println("Create Collections");
-		System.out.println("==================");
-		CollectionsCreator collectionsCreator = new CollectionsCreator();
-		collectionsCreator.createCollections();
-		
-	}
 	
-	// Sort Array of Integers
-	private void testArrayIntegersSort() {
+	public void testVar() {
 		
-		Integer[] listOfIntegers = new Integer[] {2, 4, 1, 3, 7, 5, 9, 6, 8};
+		System.out.println("Test var");
+		System.out.println("========");
 		
-		List<Integer> list = Arrays.asList(listOfIntegers);
-		 
-    List<Integer> sortedList = list.stream()
-                .sorted( (i1, i2) -> i2.compareTo(i1) )
-                .collect(Collectors.toList());
-
-    System.out.println("Array - sort Integers DESC");
-    System.out.println(sortedList);
-		
-	}
-	
-	// Sort ArrayList of Objects
-	private void testArrayListObjectsSort() {
-		
-		
-		List<Product> productsList = new ArrayList<Product>();  
+		var productsList = new ArrayList<Product>();  
     //Adding Products  
     productsList.add(new Product(1,"HP Laptop",25000f));  
     productsList.add(new Product(2,"Dell Laptop",30000f));  
@@ -75,9 +44,12 @@ public class RunnerCollections {
     System.out.println("Array - sort Products by Price DESC");
     productsList.forEach(p -> System.out.println(p.price));
     
+     
     Collections.sort(productsList, new ProductIdComaparator());
     System.out.println("Array - sort Products by Id DESC - it is PRIMITIVE data type!");
     productsList.forEach(p -> System.out.println(p.id));
+		
 	}
 
 }
+
