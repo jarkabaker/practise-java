@@ -12,6 +12,7 @@ import com.tardis.numberMethods.NumberMethodTester;
 import com.tardis.optionalClass.RunnerOptionalClass;
 import com.tardis.stream.RunnerOfStream;
 import com.tardis.stringMethods.StringMethodTester;
+import com.tardis.switchExpression.SwitchRunner;
 import com.tardis.var.VarRunner;
 
 public class Main {
@@ -63,7 +64,6 @@ public class Main {
 		// Java 10 - var = Local-Variable Type Inference
 		VarRunner varRunner = new VarRunner();
 		varRunner.testVar();
-			*/
 		
 		// Java 11 - String - repeat
 		StringMethodTester stringMethodTester = new StringMethodTester();
@@ -72,6 +72,12 @@ public class Main {
 		// Java 12 - Number - Compact Number Methods
 		NumberMethodTester numberMethodTester = new NumberMethodTester();
 		numberMethodTester.testNumberMethods();
+		 */
+		
+		// Java 13 - Switch Statement
+		SwitchRunner switchRunner = new SwitchRunner();
+		switchRunner.testSwitch();
+				
 		
   }
 
