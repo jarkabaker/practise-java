@@ -8,6 +8,7 @@ import com.tardis.interfacePractise.RunnerDefaultMethod;
 import com.tardis.lambdaExpression.RunnerLambda;
 import com.tardis.lambdaFilterAndMap.RunnerLambdaFilterAndMap;
 import com.tardis.mehodReference.RunnerMethodReference;
+import com.tardis.numberMethods.NumberMethodTester;
 import com.tardis.optionalClass.RunnerOptionalClass;
 import com.tardis.stream.RunnerOfStream;
 import com.tardis.stringMethods.StringMethodTester;
@@ -67,6 +68,10 @@ public class Main {
 		// Java 11 - String - repeat
 		StringMethodTester stringMethodTester = new StringMethodTester();
 		stringMethodTester.testStringMethod();
+		
+		// Java 12 - Number - Compact Number Methods
+		NumberMethodTester numberMethodTester = new NumberMethodTester();
+		numberMethodTester.testNumberMethods();
 		
   }
 
